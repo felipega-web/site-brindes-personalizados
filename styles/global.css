@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #000000;
+    --brand-color: #E30613;
+
+    --text-color-primary: #fff;
+    --text-color-secondary: #000;
+
+    --paragraph-color: #B0B2BC;
+    --paragraph-color-secondary: #535462;
+
+    --link-color: #A4A6B0;
+
+    --font-family: "Figtree", sans-serif;
+
+    --h1: 700 4.44rem/100% var(--font-family);
+    --h2: 700 4.44rem/100% var(--font-family);
+    --h3: 700 1.96rem/150% var(--font-family);
+
+    --text: 400 1.5125rem/150% var(--font-family);
+    --text-sm: 400 1.451rem/150% var(--font-family);
+
+    --text-mobile: 400 1.2rem/150% var(--font-family);
+    --text-mobile-sm: 400 1rem/150% var(--font-family);
+
+    --h1-mobile: 700 2.4rem/100% var(--font-family);
+    --h2-mobile: 700 2.4rem/100% var(--font-family);
+    --h3-mobile: 700 1.6rem/150% var(--font-family);
+
+    --h1-mobile-sm: 700 2.1rem/100% var(--font-family);
+    --h2-mobile-sm: 700 2.1rem/100% var(--font-family);
+    --h3-mobile-sm: 700 1.2rem/150% var(--font-family);
+
+    --text-link: 400 0.9015rem/100% var(--font-family);
+
+    --text-button: 700 1.59375rem/100% var(--font-family);
+}
+
+body {
+    font: var(--text);
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.top-bar {
+    height: 1.93rem;
+    width: 100%;
+    background-color: var(--brand-color);
+    z-index: 0;
+}
+
+.button-orcamento, .button-orcamento-final {
+    border-radius: 12.373px;
+    background: var(--brand-color);
+    box-shadow: 0px 7.071px 24.747px 0px rgba(227, 6, 19, 0.30);
+    max-width: 19.1875rem;
+    font: var(--text-button);
+    color: var(--text-color-primary);
+    padding: 0.994375rem 2.165625rem 1.505625rem 2.209375rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+body::before {
+  content: "";
+  background-image: url('../assets/img/bg-red-circle.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 73.5625rem;
+  height: 74.4375rem;
+  z-index: -1;
+}
+
+
+/* Media Queries */
+@media (width < 47.9375em) {
+    .button-orcamento, .button-orcamento-final {
+        width: 75%;
+    }
+}

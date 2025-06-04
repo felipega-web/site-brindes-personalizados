@@ -1,0 +1,106 @@
+.brindes {
+  background-image: url('../assets/img/bg-white.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+
+  padding-bottom: 14.4375rem;
+  margin-bottom: 15.4375rem;
+}
+
+.brindes h2 {
+    font: var(--h2);
+    color: var(--text-color-secondary);
+    max-width: 61.3125rem;
+    padding-top: 14.375rem;
+    padding-bottom: 4.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.brindes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+
+.brindes-lista {
+    max-width: 31.2415625rem;
+    max-height: 27.8835625rem;
+    border-radius: 0.8395rem;
+    border: 0.959px solid #C6C9D3;
+    background: #FFF;
+    padding-block: 2.638125rem 2.35625rem;
+    padding-left: 2.63875rem;
+
+    margin-bottom: 1.841875rem;
+}
+
+.brindes-lista img {
+    width: 13.6719375rem;
+    height: 6.2963125rem;
+}
+
+.brindes-lista h3 {
+    font: var(--h3);
+    color: var(--text-color-secondary);
+    margin-top: 1.97875rem;
+}
+
+.brindes-lista p {
+    font: var(--text-sm);
+    color: var(--paragraph-color-secondary);
+    margin-top: 0.73875rem;
+    max-width: 25.0894375rem;
+}
+
+.button-orcamento-final {
+    margin-top: 2.765625rem;
+    margin: 0 auto;
+}
+
+
+/* media queries */
+
+@media (width < 63.9375em) {
+
+    .brindes h2 {
+        font: var(--h2-mobile);
+    }
+
+    .brindes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem 2.5rem;
+    }
+
+    .brindes-lista {
+        max-width: 31.2415625rem;
+        max-height: 100%;
+        padding-block: 2.638125rem 2.35625rem;
+        padding-inline: 2.63875rem;
+        margin-bottom: 1.841875rem;
+    }
+}
+
+
+@media (width < 47.9375em) {
+
+    .brindes {
+        margin-top: -10rem;
+    }
+
+    .brindes h2 {
+        font: var(--h2-mobile-sm);
+    }
+
+    .brindes-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
