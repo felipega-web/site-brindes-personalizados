@@ -101,13 +101,15 @@ body::before {
 /* Media Queries */
 @media (width < 63.9375em) {
     .btn {
-        margin-left: 2rem;
+        max-width: 100vw;
+        margin-inline: 2.5rem;
+        
     }
 }
 
 @media (width < 47.9375em) {
     .btn {
-        width: 75%;
-        margin-left: 1rem;
+	    max-width: 100vw;
+        margin-inline: 1rem;
     }
 }

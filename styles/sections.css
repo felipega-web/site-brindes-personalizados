@@ -4,7 +4,6 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  /*z-index: -1;*/
 
   padding-bottom: 14.4375rem;
   margin-bottom: 15.4375rem;
@@ -84,6 +83,12 @@
         padding-inline: 2.63875rem;
         margin-bottom: 1.841875rem;
     }
+    
+    .btn-orcamento-final {
+        margin: 0;
+        margin-inline: 2.5rem;
+        
+    }
 }
 
 
@@ -104,5 +109,11 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         padding: 1rem;
+    }
+    
+    .btn-orcamento-final {
+		margin: 0;
+        margin-inline: 1rem;
+		
     }
 }
