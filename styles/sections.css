@@ -92,6 +92,9 @@
 
     .brindes {
         margin-top: -10rem;
+        background-position-x: -70rem;
+        padding-bottom: 7rem;
+        margin-bottom: 2rem;
     }
 
     .brindes h2 {
