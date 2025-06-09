@@ -1,6 +1,7 @@
 :root {
     --bg-color: #000000;
     --brand-color: #E30613;
+    --brand-color-hover: #970811;
 
     --text-color-primary: #fff;
     --text-color-secondary: #000;
@@ -65,7 +66,7 @@ img {
     z-index: 0;
 }
 
-.button-orcamento, .button-orcamento-final {
+.btn {
     border-radius: 12.373px;
     background: var(--brand-color);
     box-shadow: 0px 7.071px 24.747px 0px rgba(227, 6, 19, 0.30);
@@ -75,6 +76,12 @@ img {
     padding: 0.994375rem 2.165625rem 1.505625rem 2.209375rem;
     text-align: center;
     cursor: pointer;
+}
+
+.btn:hover,
+#button-nav:hover {
+    background: var(--brand-color-hover);
+    box-shadow: 0px 7.071px 24.747px 0px rgba(127, 5, 13, 0.3);
 }
 
 body::before {
@@ -92,8 +99,15 @@ body::before {
 
 
 /* Media Queries */
+@media (width < 63.9375em) {
+    .btn {
+        margin-left: 2rem;
+    }
+}
+
 @media (width < 47.9375em) {
-    .button-orcamento, .button-orcamento-final {
+    .btn {
         width: 75%;
+        margin-left: 1rem;
     }
 }
