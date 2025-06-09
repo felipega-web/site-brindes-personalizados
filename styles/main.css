@@ -196,6 +196,8 @@ main section:last-child {
         align-self: center;
         margin: 0 auto 2.5rem auto;
         padding-block: 1.25rem;
+        position: relative;
+        z-index: 1;
     }
     
 }   

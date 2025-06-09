@@ -24,6 +24,10 @@ nav ul li a {
     color: var(--link-color);
 }
 
+nav ul li a:hover {
+    text-decoration: underline var(--text-color-primary);
+}
+
 nav ul li:last-child {
     margin-left: auto;
 }
