@@ -1,45 +1,45 @@
-header{
-    background: rgba(18, 18, 18, 0.8);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+header {
+  background: rgba(18, 18, 18, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 header nav {
-    padding-inline: 5rem;
-    padding-block: 1.25rem;
+  padding-inline: 5rem;
+  padding-block: 1.25rem;
 }
 
 nav ul {
-    display: flex;
-    gap: 2.8125rem;
+  display: flex;
+  gap: 2.8125rem;
 }
 
 nav ul li img {
-    width: 7.25rem;
-    height: 2.021375rem;
+  width: 7.25rem;
+  height: 2.021375rem;
 }
 
 nav ul li a {
-    font: var(--text-link);
-    color: var(--link-color);
+  font: var(--text-link);
+  color: var(--link-color);
 }
 
 nav ul li a:hover {
-    text-decoration: underline var(--text-color-primary);
+  text-decoration: underline var(--text-color-primary);
 }
 
 nav ul li:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 #button-nav {
-    width: 10.125rem;
-    height: 2.5rem;
-    border-radius: 7px;
-    padding: 0.5625rem 1.3125rem 0.875rem 1.25rem;
-    background-color: var(--brand-color);
-    color: var(--text-color-primary);
-    box-shadow: 0px 4px 14px 0px rgba(227, 6, 19, 0.30);
+  width: 10.125rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  padding: 0.5625rem 1.3125rem 0.875rem 1.25rem;
+  background-color: var(--brand-color);
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 14px 0px rgba(227, 6, 19, 0.3);
 }
 
 .menu-toggle {
@@ -55,11 +55,41 @@ nav ul li:last-child {
   border: none;
 }
 
-
 /* Media Queries */
 
-@media (width < 63.9375em) {
-    
+@media (max-width: 1199px) {
+  nav ul {
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 899px) {
+  nav ul {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 839px) {
+  nav ul {
+    gap: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 766px) {
   header nav {
     position: relative;
     display: flex;
@@ -111,4 +141,3 @@ nav ul li:last-child {
     margin: 1.25rem auto;
   }
 }
-

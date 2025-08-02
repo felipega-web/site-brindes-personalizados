@@ -5,63 +5,63 @@ main .container {
 }
 
 main section:first-child {
-    padding-top: 12.6875rem;
-    padding-left: 5rem;
-    max-width: 49.3125rem;
+  padding-top: 12.6875rem;
+  padding-left: 5rem;
+  max-width: 49.3125rem;
 }
 
 main section:first-child h1 {
-    font: var(--h1);
-    margin-bottom: 1.0625rem;
+  font: var(--h1);
+  margin-bottom: 1.0625rem;
 }
 
 main section:first-child p {
-    max-width: 43.375rem;
-    font: var(--text);
-    color: var(--paragraph-color);
-    margin-bottom: 2.5rem;
+  max-width: 43.375rem;
+  font: var(--text);
+  color: var(--paragraph-color);
+  margin-bottom: 2.5rem;
 }
 
 .lista-produtos {
-    width: 34.8125rem;
-    padding: 1.5625rem 2.35125rem 1.5rem 2.1875rem;
-    border-radius: 7px;
-    border: 1px solid #fff;
-    background: rgba(255, 255, 255, 0.14);
-    box-shadow: 0px 4px 14px 0px rgba(227, 6, 19, 0.30);
-    margin-bottom: 2.8125rem;
+  width: 34.8125rem;
+  padding: 1.5625rem 2.35125rem 1.5rem 2.1875rem;
+  border-radius: 7px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0px 4px 14px 0px rgba(227, 6, 19, 0.3);
+  margin-bottom: 2.8125rem;
 }
 
 .lista-produtos ul {
-    display: flex;
+  display: flex;
 }
 
 .lista-produtos ul li:first-child {
-    margin-right: 1.930625rem;
+  margin-right: 1.930625rem;
 }
 
 .lista-produtos ul li:first-child img {
-    padding-right: 0.569375rem;
+  padding-right: 0.569375rem;
 }
 
 .lista-produtos ul li:nth-child(2) img {
-    padding-right: 0.694375rem;
+  padding-right: 0.694375rem;
 }
 
 .lista-produtos ul li:last-child {
-    margin-left: 2.180625rem;
+  margin-left: 2.180625rem;
 }
 
 .lista-produtos ul li:last-child img {
-    padding-right: 0.795rem;
+  padding-right: 0.795rem;
 }
 
 main section:last-child {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 11.19375rem;
-    margin-bottom: 8.0625rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 11.19375rem;
+  margin-bottom: 8.0625rem;
 }
 
 .copo-left {
@@ -74,132 +74,183 @@ main section:last-child {
   margin-top: -38.6875rem;
 }
 
-
 /* Media Queries */
 
-@media (width < 63.9375em) {
+@media (max-width: 1919px) {
+  .copo-left {
+    margin-right: -3rem;
+  }
 
-    main .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    main section:first-child {
-        padding: 2.5rem;
-        text-align: center;
-    }
-
-    main section:last-child {
-        padding: 0;
-        margin-bottom: 0;
-    }
-
-    .lista-produtos {
-        width: 72vw;
-        padding-inline: 2rem;
-        margin: 0 auto 2.5rem auto;
-    }
-
-    .lista-produtos ul li {
-        max-width: 6rem;
-        margin: 0 auto;
-    }
-
-    .button-orcamento{
-        margin: 0 auto;
-    }
-
-    .copo-left, .garrafa-right {
-        align-self: center;
-        margin: 0 auto 2.5rem auto;
-    }
-    
-    main section:first-child h1 {
-        font: var(--h1-mobile);
-        margin-bottom: 0.75rem;
-    }
-
-    main section:first-child p {
-        font: var(--text-mobile);
-        padding-inline: 2rem;
-        margin-block: 1.5rem;
-        text-align: left;
-    }
-
-    .lista-produtos ul li img {
-        width: 1.75rem;
-        height: auto;
-    }
-
+  .garrafa-right {
+    margin-right: -10rem;
+  }
 }
 
-@media (width < 47.9375em) {
+@media (max-width: 1366px) {
+  main section:first-child p {
+    max-width: 78%;
+  }
+}
 
-    main section:first-child {
-        padding: 0rem;
-    }
+@media (max-width: 1199px) {
+  main section:first-child p {
+    max-width: 74%;
+  }
 
-    main section:last-child {
-        padding: 0rem;
-        margin-bottom: 0rem;
-    }
+  .copo-left {
+    width: 30%;
+  }
 
-    main section:first-child h1 {
-        font: var(--h1-mobile-sm);
-        margin-bottom: 0.75rem;
-        padding-inline: 1rem;
-        padding-top: 2rem;
-    }   
+  .garrafa-right {
+    width: 22%;
+  }
+}
 
-    main section:first-child p {
-        font: var(--text-mobile);
-        padding-inline: 1rem;
-        margin-block: 1.5rem;
-        text-align: left;
-    }
+@media (max-width: 1024px) {
+  main section:first-child p {
+    max-width: 65%;
+  }
 
-    .lista-produtos {
-        width: 80vw;
-        padding-inline: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .lista-produtos {
+    width: 55%;
+  }
+}
 
-    .lista-produtos ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+@media (max-width: 899px) {
+  .copo-left {
+    margin-right: -2rem;
+    width: 35%;
+  }
 
-    .lista-produtos ul li {
-        margin: 0rem;
-    }
+  .garrafa-right {
+    margin-right: -10rem;
+    width: 25%;
+  }
+}
 
-    .lista-produtos ul li:first-child {
-        margin-right: 0rem;
-    }
+@media (max-width: 839px) {
+  main section:first-child h1 {
+    font-size: 3.75rem;
+  }
 
-    .lista-produtos ul li:last-child {
-        margin-left: 0rem;
-    }
+  main section:first-child p {
+    max-width: 95%;
+  }
 
-    .button-orcamento{
-        margin: 0 auto;
-    }
+  .lista-produtos {
+    width: 82%;
+  }
 
-    .copo-left, .garrafa-right {
-        width: 50%;
-        height: auto;
-        align-self: center;
-        margin: 0 auto 2.5rem auto;
-        padding-block: 1.25rem;
-        position: relative;
-        z-index: 1;
-    }
-    
-}   
+  .copo-left {
+    width: 50%;
+    margin-top: 10rem;
+    margin-right: 6rem;
+  }
+
+  .garrafa-right {
+    margin-right: -1rem;
+    margin-top: 4rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 766px) {
+  main section:first-child {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  main section:first-child h1 {
+    font-size: 2rem;
+  }
+
+  main section:first-child p {
+    font-size: 1rem;
+    max-width: 96%;
+  }
+
+  .lista-produtos {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .lista-produtos ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .lista-produtos ul li {
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .lista-produtos ul li img {
+    display: block;
+    margin: 0 auto;
+    width: 2.5rem;
+  }
+
+  [src='assets/icons/caneca.svg'] {
+    padding-left: 3.5rem;
+  }
+
+  [src='assets/icons/chaveiro.svg'] {
+    padding-left: 2rem;
+  }
+
+  .lista-produtos ul li span {
+    display: block;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .canecas {
+    padding-left: 3.5rem;
+  }
+
+  .chaveiros {
+    padding-left: 2rem;
+  }
+
+  .btn-orcamento-inicio {
+    width: 75%;
+  }
+
+  .copo-left {
+    margin-right: 0.2rem;
+    width: 100%;
+  }
+
+  .garrafa-right {
+    margin-right: -10rem;
+    width: 75%;
+  }
+}
+
+@media (max-width: 389px) {
+  main section:first-child h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-orcamento-inicio {
+    width: 70%;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .copo-left {
+    margin-right: 2.5rem;
+    width: 100%;
+  }
+
+  .garrafa-right {
+    margin-right: -10rem;
+    width: 100%;
+  }
+}

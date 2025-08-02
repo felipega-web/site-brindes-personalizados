@@ -10,110 +10,139 @@
 }
 
 .brindes h2 {
-    font: var(--h2);
-    color: var(--text-color-secondary);
-    max-width: 61.3125rem;
-    padding-top: 14.375rem;
-    padding-bottom: 4.5rem;
-    text-align: center;
-    margin: 0 auto;
+  font: var(--h2);
+  color: var(--text-color-secondary);
+  max-width: 61.3125rem;
+  padding-top: 14.375rem;
+  padding-bottom: 4.5rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .brindes-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 5rem;
 }
 
 .brindes-lista {
-    max-width: 31.2415625rem;
-    max-height: 27.8835625rem;
-    border-radius: 0.8395rem;
-    border: 0.959px solid #C6C9D3;
-    background: #FFF;
-    padding-block: 2.638125rem 2.35625rem;
-    padding-left: 2.63875rem;
+  max-width: 31.2415625rem;
+  max-height: 27.8835625rem;
+  border-radius: 0.8395rem;
+  border: 0.959px solid #c6c9d3;
+  background: #fff;
+  padding-block: 2.638125rem 2.35625rem;
+  padding-left: 2.63875rem;
 
-    margin-bottom: 1.841875rem;
+  margin-bottom: 1.841875rem;
 }
 
 .brindes-lista img {
-    width: 13.6719375rem;
-    height: 6.2963125rem;
+  width: 13.6719375rem;
+  height: 6.2963125rem;
 }
 
 .brindes-lista h3 {
-    font: var(--h3);
-    color: var(--text-color-secondary);
-    margin-top: 1.97875rem;
+  font: var(--h3);
+  color: var(--text-color-secondary);
+  margin-top: 1.97875rem;
 }
 
 .brindes-lista p {
-    font: var(--text-sm);
-    color: var(--paragraph-color-secondary);
-    margin-top: 0.73875rem;
-    max-width: 25.0894375rem;
+  font: var(--text-sm);
+  color: var(--paragraph-color-secondary);
+  margin-top: 0.73875rem;
+  max-width: 25.0894375rem;
 }
 
 .btn-orcamento-final {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-
 
 /* media queries */
 
-@media (width < 63.9375em) {
-
-    .brindes h2 {
-        font: var(--h2-mobile);
-    }
-
-    .brindes-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 1rem 2.5rem;
-    }
-
-    .brindes-lista {
-        max-width: 31.2415625rem;
-        max-height: 100%;
-        padding-block: 2.638125rem 2.35625rem;
-        padding-inline: 2.63875rem;
-        margin-bottom: 1.841875rem;
-    }
-    
-    .btn-orcamento-final {
-        margin: 0;
-        margin-inline: 2.5rem;
-        
-    }
+@media (max-width: 1919px) {
+  .brindes-lista {
+    padding: 1rem;
+  }
 }
 
+@media (max-width: 1366px) {
+  .brindes-lista {
+    padding: 0.75rem;
+  }
 
-@media (width < 47.9375em) {
+  .brindes-lista h3 {
+    font-size: 1.5rem;
+  }
 
-    .brindes {
-        margin-top: -10rem;
-        background-position-x: -70rem;
-        padding-bottom: 7rem;
-        margin-bottom: 2rem;
-    }
+  .brindes-lista p {
+    font-size: 1.25rem;
+  }
+}
 
-    .brindes h2 {
-        font: var(--h2-mobile-sm);
-    }
+@media (max-width: 1039px) {
+  .brindes-lista p {
+    font-size: 1rem;
+  }
+}
 
-    .brindes-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-        padding: 1rem;
-    }
-    
-    .btn-orcamento-final {
-		margin: 0;
-        margin-inline: 1rem;
-		
-    }
+@media (max-width: 839px) {
+  .brindes h2 {
+    font-size: 4rem;
+  }
+
+  .brindes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 766px) {
+  .brindes {
+    margin-top: -7rem;
+    padding-bottom: 8rem;
+    margin-bottom: 0;
+  }
+
+  .brindes h2 {
+    font-size: 2rem;
+  }
+
+  .brindes-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    padding: 0 0 0 2rem;
+  }
+
+  .btn-orcamento-final {
+    width: 75%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 389px) {
+  .brindes {
+    margin-top: -10rem;
+  }
+
+  .brindes h2 {
+    font-size: 1.5rem;
+    padding-top: 10rem;
+  }
+
+  .brindes-grid {
+    width: 90%;
+    padding: 0 0 0 1rem;
+  }
+
+  .brindes-lista h3 {
+    font-size: 1.25rem;
+  }
+
+  .btn-orcamento-final {
+    width: 70%;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
 }
